@@ -1,0 +1,377 @@
+Here's a complete, professional HTML file for the GamerXise main page using Tailwind CSS:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerXise - Transform Your Gaming Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-primary text-2xl font-bold">GamerXise</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Pricing</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Blog</a>
+                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700">Join Now</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">About</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Services</a>
+                <a href="#pricing" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Pricing</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Testimonials</a>
+                <a href="blog.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Blog</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-white bg-primary hover:bg-indigo-700">Join Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Transform Your Gaming Experience with GamerXise</h1>
+                    <p class="text-xl mb-8">Get fit while you game with our innovative exercise programs designed to enhance your health and gaming skills.</p>
+                    <a href="#contact" class="bg-white text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">Join Now</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gamer exercising" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="md:flex md:items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=c=crop&w=1470&q=80" alt="Founder story" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        GamerXise was created out of necessity by a founder with ADHD and a TBI survivor who was suffering from chronic migraines. Struggling to maintain healthy exercise habits, he turned to what he knew worked: the immersive world of video games. By merging video games and exercise, he not only improved his health but also his reaction time, brain-body relationship, and gaming skills. GamerXise is now a solution for gamers worldwide, offering full-body workouts that can be done right from your living room, with no additional equipment required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">GamerXise Monthly Subscription</h3>
+                    <p class="text-gray-600 mb-4">Get new workouts every month, guided sessions, educational resources, and bonuses to improve your results. Perfect for gamers looking to stay fit while enjoying their favorite games.</p>
+                    <p class="text-primary font-bold">$27/month</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">GamerXise Client</h3>
+                    <p class="text-gray-600 mb-4">Tailored programs for specific goals, including game skill improvement and health challenges. Receive personalized guidance from a personal trainer who will assess, create, and monitor your program.</p>
+                    <p class="text-primary font-bold">$100/month or $75 per session</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">GamerXise Programming</h3>
+                    <p class="text-gray-600 mb-4">Semi-personalized programs designed by a personal trainer, with monthly updates and adjustments to your personal program. Ideal for those seeking a customized fitness plan.</p>
+                    <p class="text-primary font-bold">$100 initial fee, $60/month for updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Pricing Plans</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-primary transition duration-300">
+                    <h3 class="text-xl font-bold text-center mb-4">Basic</h3>
+                    <p class="text-3xl font-bold text-center text-primary mb-6">$27/month</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>New workouts every month</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Guided sessions</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Educational resources</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Bonuses to improve results</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-primary text-white text-center py-2 rounded-md hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="border-2 border-primary rounded-lg p-6 transform scale-105 shadow-lg">
+                    <div class="bg-primary text-white text-center py-1 px-3 rounded-full text-sm font-bold mb-4 -mt-8 mx-auto w-3/4">Most Popular</div>
+                    <h3 class="text-xl font-bold text-center mb-4">Premium</h3>
+                    <p class="text-3xl font-bold text-center text-primary mb-6">$100/month</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Personalized program</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Personal trainer guidance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Monthly updates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Game skill improvement</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-primary text-white text-center py-2 rounded-md hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-primary transition duration-300">
+                    <h3 class="text-xl font-bold text-center mb-4">Pro</h3>
+                    <p class="text-3xl font-bold text-center text-primary mb-6">$100 initial fee, $60/month</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Semi-personalized program</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Monthly updates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Customized fitness plan</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-primary text-white text-center py-2 rounded-md hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Members Say</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"GamerXise has been a game-changer for me. I've lost weight, gained muscle, and my gaming skills have improved dramatically. I can't recommend it enough!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <span class="font-bold">A</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Alex R.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I was skeptical at first, but GamerXise has exceeded my expectations. The workouts are fun and engaging, and I've noticed a significant improvement in my focus and mood."</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <span class="font-bold">S</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sam G.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a gamer with a busy schedule, GamerXise fits perfectly into my lifestyle. I'm healthier, happier, and my reaction time in games has never been better."</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <span class="font-bold">J</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Jordan K.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Level Up Your Fitness?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join GamerXise today and start your journey to a healthier, more active gaming lifestyle.</p>
+            <a href="#" class="bg-white text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">GamerXise</h3>
+                    <p class="text-gray-400">Transform your gaming experience with innovative exercise programs designed for gamers.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition duration-300">Pricing</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition duration-300">Terms of Use</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Email: info@gamerxise.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 GamerXise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
